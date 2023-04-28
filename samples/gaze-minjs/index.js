@@ -5,7 +5,7 @@ import showGaze from "../showGaze";
 // min js
 import EasySeeSo from '../../seeso-minjs/easy-seeso';
 
-const licenseKey = 'YOUR_LICENSE_KEY_HERE'; // Issue license key! -> https://console.seeso.io
+const licenseKey = 'dev_l5zzd0c9q92ba39iwku9hh1rogc0coqn8t3lvlqm'; // Issue license key! -> https://console.seeso.io
 
 // gaze callback.
 function onGaze(gazeInfo) {

@@ -2,7 +2,11 @@ import 'regenerator-runtime/runtime';
 import EasySeeSo from 'seeso/easy-seeso';
 import showGaze from "../showGaze";
 
-const licenseKey = 'INPUT_YOUR_KEY';
+const licenseKey = 'dev_l5zzd0c9q92ba39iwku9hh1rogc0coqn8t3lvlqm';
+let canvas = document.getElementById("output")
+canvas.width = window.innerWidth
+canvas.height = window.innerHeight
+let ctx = canvas.getContext("2d");
 
 function onClickCalibrationBtn(){
     const userId = 'YOUR_USER_ID'; // ex) 5e9easf293
@@ -24,7 +28,7 @@ function parseCalibrationDataInQueryString () {
 // gaze callback.
 function onGaze(gazeInfo) {
     // do something with gaze info.
-    showGaze(gazeInfo)
+    showGaze(gazeInfo,ctx)
 }
 
 // debug callback.
